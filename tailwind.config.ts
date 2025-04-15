@@ -18,7 +18,17 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'nunito': ['Nunito', 'sans-serif'],
+				'poppins': ['Poppins', 'sans-serif'],
+			},
 			colors: {
+				// Custom colors for Easy2Move clinic
+				greenLight: '#e6f2e6',
+				greenMedium: '#7cc17c',
+				greenDark: '#3a8a3a',
+				beige: '#f7ecd9',
+				beigeDark: '#e7d3b3',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
