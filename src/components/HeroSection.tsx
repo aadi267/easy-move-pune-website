@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -19,12 +20,12 @@ const HeroSection = () => {
               >
                 Our Services
               </a>
-              <a 
-                href="/contact" 
+              <Link 
+                to="/contact" 
                 className="bg-white hover:bg-gray-100 text-greenDark border border-greenDark font-poppins font-semibold px-6 py-3 rounded-md transition-colors inline-block text-center"
               >
                 Find Our Clinics
-              </a>
+              </Link>
             </div>
           </div>
           <div className="md:w-1/2">
