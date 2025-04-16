@@ -6,12 +6,13 @@ const BookAppointment = () => {
   const [showMessage, setShowMessage] = useState(false);
 
   const handleClick = () => {
-    setShowMessage(true);
+    // setShowMessage(true);
     
-    // Automatically hide message after 5 seconds
-    setTimeout(() => {
-      setShowMessage(false);
-    }, 5000);
+    // // Automatically hide message after 5 seconds
+    // setTimeout(() => {
+    //   setShowMessage(false);
+    // }, 5000);
+    window.location.href = "tel:07715957284";
   };
 
   return (
@@ -28,7 +29,7 @@ const BookAppointment = () => {
       </div>
 
       {/* Popup Message */}
-      {showMessage && (
+      {/* {showMessage && (
         <div className="fixed bottom-24 right-6 bg-white p-4 rounded-lg shadow-lg border border-greenMedium max-w-xs z-50 animate-fade-in">
           <p className="font-nunito text-gray-800">
             <span className="font-semibold">📞 Please call 07715957284</span> to book your slot at the nearest clinic.
@@ -41,7 +42,7 @@ const BookAppointment = () => {
             &times;
           </button>
         </div>
-      )}
+      )} */}
     </>
   );
 };
